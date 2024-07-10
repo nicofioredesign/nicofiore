@@ -464,6 +464,8 @@ a:hover:after {
 }
 
 /* Stili per i dispositivi mobili */
+
+/* Stili per i dispositivi con larghezza minima di 360px */
 @media (min-width: 360px) {
     .elemento img {
         height: 100vh; /* Imposta un'altezza verticale fissa per le immagini */
@@ -485,11 +487,11 @@ a:hover:after {
     }
 }
 
-/* Media query per adattare le immagini su schermi più piccoli */
+/* Stili per i dispositivi con larghezza massima di 359px */
 @media (max-width: 359px) {
     .elemento img {
-        width: 480px; /* Larghezza fissa per le immagini su dispositivi mobili */
-        height: 640px; /* Altezza fissa per le immagini su dispositivi mobili */
+        width: 100%; /* Larghezza piena del contenitore */
+        height: auto; /* Altezza automatica per mantenere le proporzioni */
         object-fit: cover; /* Copre l'intero contenitore ritagliando l'immagine */
         object-position: center; /* Posiziona l'immagine al centro del contenitore */
     }
