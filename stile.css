@@ -470,29 +470,40 @@ a:hover:after {
         object-fit: cover; /* Copre l'intero contenitore ritagliando l'immagine */
         object-position: center; /* Posiziona l'immagine al centro del contenitore */
     }
-}
 
-/* Media query per adattare le immagini su schermi più piccoli */
-@media (min-width: 360px) {
-        /* Nascondi il menu desktop e mostra il pulsante di navigazione mobile */
-        .navbar-desktop {
-            display: none;
-        }
+    /* Nascondi il menu desktop e mostra il pulsante di navigazione mobile */
+    .navbar-desktop {
+        display: none;
+    }
 
-        .nav-button {
-            display: inline-block;
-        }
+    .nav-button {
+        display: inline-block;
+    }
 
     .riga {
         flex-direction: column;
     }
+}
 
+/* Media query per adattare le immagini su schermi più piccoli */
+@media (max-width: 359px) {
     .elemento img {
-        elemento img {
-            width: 480px; /* Larghezza fissa per le immagini su dispositivi mobili */
-            height: 640px; /* Altezza fissa per le immagini su dispositivi mobili */
-            object-fit: cover; /* Copre l'intero contenitore ritagliando l'immagine */
-            object-position: center; /* Posiziona l'immagine al centro del contenitore */
+        width: 480px; /* Larghezza fissa per le immagini su dispositivi mobili */
+        height: 640px; /* Altezza fissa per le immagini su dispositivi mobili */
+        object-fit: cover; /* Copre l'intero contenitore ritagliando l'immagine */
+        object-position: center; /* Posiziona l'immagine al centro del contenitore */
+    }
 
+    /* Nascondi il menu desktop e mostra il pulsante di navigazione mobile */
+    .navbar-desktop {
+        display: none;
+    }
+
+    .nav-button {
+        display: inline-block;
+    }
+
+    .riga {
+        flex-direction: column;
     }
 }
