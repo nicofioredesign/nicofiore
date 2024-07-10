@@ -464,7 +464,7 @@ a:hover:after {
 }
 
 /* Stili per i dispositivi mobili */
-@media (max-width: 360px) {
+@media (min-width: 360px) {
     .elemento img {
         height: 100vh; /* Imposta un'altezza verticale fissa per le immagini */
         object-fit: cover; /* Copre l'intero contenitore ritagliando l'immagine */
@@ -473,7 +473,7 @@ a:hover:after {
 }
 
 /* Media query per adattare le immagini su schermi più piccoli */
-@media (max-width: 360px) {
+@media (min-width: 360px) {
         /* Nascondi il menu desktop e mostra il pulsante di navigazione mobile */
         .navbar-desktop {
             display: none;
